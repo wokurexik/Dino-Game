@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.game{
+  width: 500px;
+  height: 200px;
+  border-bottom: 1px  solid black;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#dinosaur {
+  width: 70px;
+  height: 80px;
+}
+
+#character{
+  width: 40px;
+  height: 60px;
+  position:relative;
+  top: 86px;
+  left: 30px;
+}
+.animate{
+  animation: jump 0.3s linear;
+}
+@keyframes jump{
+  0%{top: 86px;}
+  30%{top: 35px;}
+  70%{top: 35px;}
+  100%{top: 86px;}
+}
+
+#cloud-div {
+  top: 60px;
+  position: relative;
+  animation: cloud 30s infinite ;
+}
+
+@keyframes cloud {
+  0%{left: 20px}
+  100%{left:500px}
+}
+
+img {
+  width: 40px;
+}
+
+#block{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 57px;
+  padding-bottom: 10px;
+  left: 300px;
+  display: none;
+  animation: block 1s infinite linear;
+}
+
+
+@keyframes block{
+  0%{left: 500px}
+  100%{left: -20px}
+}
+
+p{
+  
+  font-size: 25px;
+  position: relative;
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+
+}
+
+.menu  {
+  width: 400px;
+  text-align: center;
+  margin: auto;
+  margin-top:200px;
+}
+
+.menu-h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+}
+
+.menu-button {
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.menu-button:hover {
+  background: gray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
