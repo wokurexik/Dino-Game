@@ -1,6 +1,7 @@
   var character = document.getElementById("character");
   var block = document.getElementById("block");
   var counter = 0;
+  var x = document.getElementById("block");
   function jump() {
     if (character.classList == "animate") {
       return;
@@ -22,11 +23,12 @@
       alert("Game Over. score: " + Math.floor(counter / 100));
       counter = 0;
       block.style.animation = "block 1s infinite linear";
-    } else {
+    } else if (x.style.display === "block")  {
       counter++;
       document.getElementById("scoreSpan").innerHTML = Math.floor(counter / 100);
     }
   }, 10);
+
   
   
 function startGame() {

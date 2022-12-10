@@ -39,8 +39,8 @@
 }
 
 @keyframes cloud {
-  0%{left: 20px}
-  100%{left:500px}
+  0%{left: 500px}
+  100%{left: 20px}
 }
 
 img {
